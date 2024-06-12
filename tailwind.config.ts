@@ -1,5 +1,11 @@
 import type { Config } from "tailwindcss";
 
+const colorsConfig = {
+  "primary-blue":'#010847',
+  "secondary-blue":'#B0D7F8',
+  "tertiary-blue":'#DBEFFE',
+}
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,6 +19,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: colorsConfig,
     },
   },
   plugins: [],
